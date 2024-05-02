@@ -173,7 +173,7 @@ button1.setOnClickListener(new View.OnClickListener() {
 public void onClick(View _view) {
 Intent i = new Intent();
 i.setComponent(new ComponentName("com.asd22.social", "com.asd22.social.AuthActivity"));
-i.putExtra("code", "YOUR_aSocial_AUTH_TOKENorURL");
+i.setData(Uri.parse("YOUR_aSocial_AUTH_TOKENorURL"));
 startActivityForResult(i, 1001);
 }
 });
